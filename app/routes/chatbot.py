@@ -31,9 +31,8 @@ def ask_question(username: str, question: str):
             )
             data = response.json()
             answer = data["choices"][0]["message"]["content"]
-            answer = "hola"
         except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e))
+            raise HTTPException(status_code=500, detail="No se pudo establecer conexión con la API de OpenAI. Verifique su conexión a internet o el estado del servicio.")
 
         msg = Message(username=username, question=question, response=answer)
         session.add(msg)
