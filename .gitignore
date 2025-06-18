@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+*.db
+
+# Environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# pyright / mypy
+.pyrightconfig.json
+.mypy_cache/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Ollama models (opcional, si llegas a montar algo en local con descarga)
+ollama-models/
