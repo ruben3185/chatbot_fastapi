@@ -31,3 +31,7 @@ echo OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx > .env
 
 # 5. Ejecuta el servidor
 uvicorn main:app --reload
+
+
+# 6. Run test 
+pytest
